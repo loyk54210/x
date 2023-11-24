@@ -1,5 +1,61 @@
 #!/bin/bash
+mysql_boost_link=https://niumapan.top/directlink/3/centos7-yum%E6%BA%90/mysql-boost-5.7.44.tar.gz
+#-----------------------进度条函数----------
+Dynamic_Pbar(){
+		echo -n "-"
+	        sleep 0.1
+	        echo -n "-"
+	        sleep 0.09
+	        echo -n "--"
+	        sleep 0.08
+	        echo -n "---"
+	        sleep 0.08
+	        echo -n "-----"
+	        sleep 0.08
+	        echo -n "------"
+	        sleep 0.08
+	        echo -n "-------"
+	        sleep 0.08
+	        echo -n "--------"
+	        sleep 0.08
+	        echo -n "---------"
+	        sleep 0.07
+	        echo -n "----------"
+	        sleep 0.07
+	        echo -n "-----------"
+	        sleep 0.07
+	        echo -n "-------------"
+	        sleep 0.07
+	        echo -n "--------------"
+	        echo
+	        sleep 0.07
+	        sleep 0.1
 
+}
+#-------小进度条函数-----彩色
+Dynamic_Pbar02(){
+		echo -n -e "\e[31m--\e[0m"
+	        sleep 0.1
+	        echo -n -e "\e[32m---\e[0m"
+	        sleep 0.09
+	        echo -n -e "\e[33m----\e[0m"
+	        sleep 0.08
+	        echo -n -e "\e[34m----\e[33m---\e[0m\e[0m"
+	        sleep 0.08
+	        echo -n -e "\e[31m----\e[0m-\e[32m---\e[0m"
+	        sleep 0.08
+	        echo -n -e "\e[35m-------\e[0m"
+	        sleep 0.08
+	        echo -n -e "\e[36m-----\e[0m"
+	        sleep 0.08
+	        echo -n -e "\e[37m-----\e[0m"
+	        sleep 0.08
+	        echo  -e "\e[33m---\e[0m"
+	        echo
+	        sleep 0.07
+	        sleep 0.1
+
+}
 while true
 do
 	echo "1.一键编译安装mysql5.7"
